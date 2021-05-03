@@ -1,0 +1,70 @@
+.carrito {
+    width: 30%;
+    height: 440px;
+    position: relative;
+    top: 170px;
+    @media(max-width: 768px) {
+        width: 20%;
+    }
+    img {
+        width: 40px;
+        height: 40px;
+        display: block;
+        margin-top: 3px;
+        margin-left: 40px;
+    }
+    #boton-menu {
+        display: none;
+    }
+    label {
+        display: block;
+        width: 35px;
+        height: 35px;
+        margin-left: 50px;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.nav-carrito {
+    display: block;
+    width: 100%;
+    min-width: 300px;
+    height: 350px;
+    background-color: $color2;
+    opacity: 0.9;
+    position: absolute;
+    bottom: 40px;
+    margin-left: -100%;
+    padding-bottom: 30px;
+    @media(max-width: 768px) {
+        margin-left: -100vw;
+        width: 30%;
+    }
+    table {
+        width: 100%;
+        height: 100%;
+        font-family: $Fuente1;
+        text-align: center;
+        thead {
+            background-color: $color1;
+            tr {
+                width: 50%;
+                td {
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
+
+#boton-menu:checked~.nav-carrito {
+    margin-left: 0%;
+    transition: 0.8s;
+}
+
+button {
+    @include Boton;
+    width: 100%;
+}

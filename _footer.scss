@@ -1,0 +1,62 @@
+.footerContenedor {
+    width: 100%;
+    height: 500px;
+    background-color: $color5;
+}
+
+.footer {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    .iconoFooter {
+        width: 70%;
+        height: 20%;
+        margin: 0 auto;
+        padding-top: 50px;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.contactoLegales {
+    width: 80%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+    .contacto {
+        width: 50%;
+        height: 70%;
+        padding: 40px;
+    }
+    .legales {
+        width: 50%;
+        height: 70%;
+        padding: 40px;
+        p {
+            @include parrafo;
+        }
+    }
+}
+
+.info-contact {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    p {
+        @include parrafo;
+    }
+    i {
+        color: $color3;
+        margin-right: 20px;
+        font-size: 20px;
+    }
+}
+
+h2 {
+    @include Subtitulo;
+    padding: 15px;
+}

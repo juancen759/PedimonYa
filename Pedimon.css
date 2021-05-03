@@ -1,0 +1,653 @@
+.contenedor {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #ffce47;
+  height: auto;
+}
+
+.header {
+  width: 80%;
+  margin: 0 auto;
+  height: 750px;
+}
+
+.header .Barra-navegacion {
+  width: 100%;
+  height: 90px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 40px;
+}
+
+.header .Barra-logo {
+  width: 300px;
+}
+
+@media (max-width: 768px) {
+  .header .Barra-logo {
+    width: 350px;
+    margin-left: 80px;
+  }
+}
+
+.header .Barra-logo img {
+  width: 100%;
+  height: 60%;
+}
+
+@media (max-width: 768px) {
+  .header .Barra-logo img {
+    height: 50%;
+  }
+}
+
+.header .Items-navegacion {
+  width: 50%;
+}
+
+.header .Items-navegacion #btn-menu {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .header .Items-navegacion #btn-menu:checked ~ .menu {
+    margin: 0;
+  }
+}
+
+.header .Items-navegacion label img {
+  display: none;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+}
+
+.header .Items-navegacion label img:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .header .Items-navegacion label img {
+    display: block;
+    margin-left: 160px;
+  }
+}
+
+.header .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  line-height: 50px;
+}
+
+@media (max-width: 768px) {
+  .header .menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 40%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.3);
+    margin-left: -120%;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+}
+
+.header .menu li {
+  width: 25%;
+  height: 50px;
+  list-style: none;
+  color: #2471A3;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 10%;
+}
+
+.header .menu li:hover {
+  cursor: pointer;
+  background-color: #0c4da2;
+  color: #fff;
+  opacity: 0.5;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+@media (max-width: 768px) {
+  .header .menu li {
+    border-top: 1px solid #fff;
+    width: 100%;
+  }
+}
+
+.header .header-info {
+  width: 100%;
+  height: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-bottom: 100px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .header .header-info {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.header .header-info .pedimon-ya {
+  width: 50%;
+  padding: 30px;
+}
+
+@media (max-width: 768px) {
+  .header .header-info .pedimon-ya {
+    width: 100%;
+    padding: 40px;
+    margin-top: 100px;
+  }
+}
+
+.header .header-info .pedimon-ya img {
+  width: 80%;
+}
+
+.header .header-info p {
+  font-family: "Noto Sans JP", sans-serif;
+  color: #0c4da2;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.header .header-info button {
+  width: 80%;
+  height: 45px;
+  background-color: #2471A3;
+  border-radius: 10px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 20px;
+  color: #fff;
+  margin-top: 15px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .header .header-info button {
+    margin-top: 30px;
+    width: 70%;
+  }
+}
+
+.header .logo-pikachu {
+  width: 50%;
+  height: 250px;
+  margin-bottom: 70px;
+}
+
+@media (max-width: 768px) {
+  .header .logo-pikachu {
+    width: 50%;
+    height: 200px;
+    margin-left: 100px;
+  }
+}
+
+.header .logo-pikachu img {
+  width: 100%;
+}
+
+.Contenedor-main {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: #0c4da2;
+}
+
+.Contenedor-main .main-info {
+  width: 80%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.Titulos {
+  margin-top: 40px;
+}
+
+.Titulos h1 {
+  font-family: "Work Sans", sans-serif;
+  color: #ffce47;
+  font-size: 45px;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 90px;
+}
+
+.Titulos span {
+  display: block;
+  text-align: center;
+  color: #fff;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 18px;
+  padding-top: 10px;
+}
+
+.Iconos {
+  width: 100%;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 768px) {
+  .Iconos {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 50px;
+    height: 40%;
+  }
+}
+
+.Iconos .Tarj-Icon {
+  width: 24%;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .Iconos .Tarj-Icon {
+    width: 60%;
+    padding-top: 40px;
+    display: block;
+  }
+}
+
+.Iconos img {
+  padding-left: 50px;
+}
+
+@media (max-width: 768px) {
+  .Iconos img {
+    min-width: 50%;
+    padding-left: 32%;
+    padding-top: 30px;
+  }
+}
+
+.Iconos p {
+  text-align: center;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 18px;
+  color: #fff;
+  padding-top: 35px;
+}
+
+.contenedorCards {
+  width: 100%;
+  height: 1000px;
+  margin: 0 auto;
+  background: #2d98e7;
+  background: radial-gradient(circle, rgba(45, 152, 231, 0.983631) 6%, #3a7bd5 42%);
+}
+
+@media (max-width: 768px) {
+  .contenedorCards {
+    height: auto;
+  }
+}
+
+.contenedorCards .Titulaso {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80px;
+  width: 100%;
+  padding-top: 30px;
+  margin-bottom: 50px;
+}
+
+.contenedorCards .Titulaso h1 {
+  font-family: "Work Sans", sans-serif;
+  color: #ffce47;
+  font-size: 45px;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 90px;
+}
+
+@media (max-width: 768px) {
+  .contenedorCards .Titulaso h1 {
+    margin: 0 100px;
+  }
+}
+
+.Cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (30%)[3];
+      grid-template-columns: repeat(3, 30%);
+  -ms-grid-rows: (48%)[3];
+      grid-template-rows: repeat(3, 48%);
+  -webkit-column-gap: 25px;
+          column-gap: 25px;
+  row-gap: 25px;
+  width: 75%;
+  height: 80%;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .Cards {
+    -ms-grid-columns: (47%)[2];
+        grid-template-columns: repeat(2, 47%);
+    -ms-grid-rows: (48%)[4];
+        grid-template-rows: repeat(4, 48%);
+    height: 100%;
+  }
+}
+
+.Cards .tarjeta {
+  border: 1px solid #ffce47;
+  border-radius: 30px;
+  box-shadow: 9px 14px 6px -6px rgba(0, 0, 0, 0.41);
+  -webkit-box-shadow: 9px 14px 6px -6px rgba(0, 0, 0, 0.41);
+  -moz-box-shadow: 9px 14px 6px -6px rgba(0, 0, 0, 0.41);
+}
+
+.Cards .tarjeta img {
+  width: 80%;
+  height: 50%;
+  padding-top: 10px;
+  padding-left: 65px;
+}
+
+.info-pokemon {
+  width: 100%;
+  height: 165px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.info-pokemon span {
+  width: 100%;
+  height: 40px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 30px;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+
+.info-pokemon p {
+  font-family: "Work Sans", sans-serif;
+  font-size: 35px;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  color: #fff;
+  padding-top: 15px;
+}
+
+.info-pokemon button {
+  margin-top: 30px;
+  width: 60%;
+  background-color: #ffce47;
+  height: 35px;
+  border: solid 1px black;
+  border-radius: 20px;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.info-pokemon button:hover {
+  background-color: black;
+  color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.carrito {
+  width: 30%;
+  height: 440px;
+  position: relative;
+  top: 170px;
+}
+
+@media (max-width: 768px) {
+  .carrito {
+    width: 20%;
+  }
+}
+
+.carrito img {
+  width: 40px;
+  height: 40px;
+  display: block;
+  margin-top: 3px;
+  margin-left: 40px;
+}
+
+.carrito #boton-menu {
+  display: none;
+}
+
+.carrito label {
+  display: block;
+  width: 35px;
+  height: 35px;
+  margin-left: 50px;
+}
+
+.carrito label:hover {
+  cursor: pointer;
+}
+
+.nav-carrito {
+  display: block;
+  width: 100%;
+  min-width: 300px;
+  height: 350px;
+  background-color: #2471A3;
+  opacity: 0.9;
+  position: absolute;
+  bottom: 40px;
+  margin-left: -100%;
+  padding-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .nav-carrito {
+    margin-left: -100vw;
+    width: 30%;
+  }
+}
+
+.nav-carrito table {
+  width: 100%;
+  height: 100%;
+  font-family: "Noto Sans JP", sans-serif;
+  text-align: center;
+}
+
+.nav-carrito table thead {
+  background-color: #ffce47;
+}
+
+.nav-carrito table thead tr {
+  width: 50%;
+}
+
+.nav-carrito table thead tr td {
+  width: 50%;
+}
+
+#boton-menu:checked ~ .nav-carrito {
+  margin-left: 0%;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+button {
+  width: 60%;
+  background-color: #ffce47;
+  height: 35px;
+  border: solid 1px black;
+  border-radius: 20px;
+  font-family: "Noto Sans JP", sans-serif;
+  width: 100%;
+}
+
+button:hover {
+  background-color: black;
+  color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.footerContenedor {
+  width: 100%;
+  height: 500px;
+  background-color: #0c4da2;
+}
+
+.footer {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.footer .iconoFooter {
+  width: 70%;
+  height: 20%;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.footer .iconoFooter img {
+  width: 100%;
+}
+
+.contactoLegales {
+  width: 80%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+.contactoLegales .contacto {
+  width: 50%;
+  height: 70%;
+  padding: 40px;
+}
+
+.contactoLegales .legales {
+  width: 50%;
+  height: 70%;
+  padding: 40px;
+}
+
+.contactoLegales .legales p {
+  color: #fff;
+  font-size: 13px;
+  text-align: justify;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.info-contact {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+.info-contact p {
+  color: #fff;
+  font-size: 13px;
+  text-align: justify;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.info-contact i {
+  color: #fff;
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+h2 {
+  font-family: "Work Sans", sans-serif;
+  color: #fff;
+  font-size: 20px;
+  text-align: justify;
+  padding: 15px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*# sourceMappingURL=Pedimon.css.map */

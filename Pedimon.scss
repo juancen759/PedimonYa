@@ -1,0 +1,24 @@
+//Colores
+$color1: #ffce47;
+$color2:#2471A3;
+$color3: #fff;
+$color4:#E74C3C;
+$color5: #0c4da2;
+//Fuentes
+$Fuente1:'Noto Sans JP',
+sans-serif;
+$Fuente2: 'Work Sans',
+sans-serif;
+//Import
+@import 'mixins';
+@import 'header';
+@import 'iconos';
+@import 'cards';
+@import 'carrito';
+@import 'footer';
+//globales
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
